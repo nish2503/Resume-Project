@@ -1,0 +1,267 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header{
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url("https://wallpapers.com/images/hd/aesthetic-laptop-drawing-kzs2xmyje63oewbt.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+    object-position: bottom;
+}
+
+/* Horizontal List */
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px; /*to have no space above ul*/
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 0px 8px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.horizontal-list li a{
+    color: rgb(255, 251, 244);
+    text-decoration: none;
+}
+
+.nav-menu{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover{
+    color: rgb(236, 227, 210);
+    border-bottom: 1px solid white;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Name and Socials */
+
+#name-social-container{
+    margin-top: 20vh;
+}
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a i{
+    padding: 10px;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+}
+
+/* SECTIONS */
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* height: 75vh; */
+    align-items: center;
+}
+
+section:nth-child(2n+1){
+    background-color: white;
+}
+
+section:nth-child(2n){
+    background-color: rgb(219, 241, 243);
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: rgb(29, 125, 138);
+    display: inline-block;
+    padding-top: 10px;
+    margin: 0.5rem;
+}
+
+/* About Section */
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#about p{
+    color: grey;
+    width: 150vh;
+    text-align: justify;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-size: 25px;
+}
+
+#about p span{
+    color: rgb(29, 125, 138);
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto; /*to center img*/
+    margin-top: -14vh;
+    position: relative; /* to bring image above header section img, can also use z-index higher value means at top*/
+}
+
+#my-image img{
+    border-radius: 50%;
+    height: 100%; /*will set according to parent*/
+    width: 100%;
+    object-fit: cover; /*to avoid stretching*/
+    object-position: top;
+    border: 1px solid white;
+    box-shadow: 0px 0px 6px 4px rgb(195, 205, 209);
+}
+
+/* Skills Section */
+
+.skills-display{
+    width: 70%;
+    height: 100%;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill-progress{
+    width: 11rem;
+    height: 2.2rem;
+    margin: 25px;
+    background-color: lightgray;
+    border-radius: 1rem;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.skill-progress>div{
+    border-radius: 1rem 0rem 0rem 1rem;
+    -webkit-border-radius: 1rem 0rem 0rem 1rem;
+    -moz-border-radius: 1rem 0rem 0rem 1rem;
+    -ms-border-radius: 1rem 0rem 0rem 1rem;
+    -o-border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Common Margin Classes */
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.mb-teal{
+    background-color: rgb(29, 125, 138);
+}
+
+.mb-orange{
+    background-color: rgb(241, 157, 0);
+}
+
+.mb-purple{
+    background-color: rgb(151, 112, 189);
+}
+
+/* Percentage Classes */
+
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+    /* box-shadow: 3px 0px 5px -3px grey; */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fifty-percent{
+    width: 50%;
+    height: inherit;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Section */
+
+.portfolio-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-image-container{
+    height: 15rem;
+    width: 18rem;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.portfolio-image-container img{
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-details{
+    transition: all 0.5s ease-in-out;
+    color: transparent;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.portfolio-image-container:hover{
+    box-shadow: 0px 0px 10px rgb(133, 202, 219);
+}
+
+.portfolio-image-container:hover .portfolio-details{
+    color: white;
+    background-color: rgba(117, 117, 117, 0.6);
+}
