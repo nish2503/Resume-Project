@@ -265,3 +265,102 @@ section:nth-child(2n){
     color: white;
     background-color: rgba(117, 117, 117, 0.6);
 }
+
+/* Contact Section */
+
+#contact{
+    background: linear-gradient(#2857a4, #403066);
+    padding-bottom: 30px;
+}
+
+.contact-section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.contact-section-heading span{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding-top: 10px;
+    margin: 0.5rem;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    margin-top: 15px;
+    width: 40%;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+hr{
+    flex: 1;
+}
+
+.contact-address{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    width: 40%;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.contact-address p:not(:first-of-type){
+    margin-bottom: -4px;
+    line-height: 1px;
+}
+
+.contact-details input, textarea, button{
+    background-color: transparent;
+    border: none;
+    margin: 30px;
+    margin-bottom: 60px;
+    resize: none; /*to prevent dragging textarea*/
+}
+
+.contact-details input, textarea{
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact-details input:focus{
+    outline: none; /*to remove the border of input*/
+}
+
+.contact-details textarea:focus{
+    outline: none !important;
+    /* border: none !important; */
+}
+
+textarea::placeholder, input::placeholder{
+    color: white;
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.button button{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    border: 2px solid white;
+    padding: 10px;
+}
+
