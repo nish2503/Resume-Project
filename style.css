@@ -219,6 +219,76 @@ section:nth-child(2n){
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Experience Section */
+
+.timeline{
+    position: relative;
+    width: 75%;
+    border: 2px solid black;
+}
+
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+    /* display: flex;
+    justify-content: flex-end;
+    flex-direction: column; */
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+    
+}
+
+.designation{
+    /* border: 2px solid black; */
+    margin: 5px;
+}
+
+.desig-details p{
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+.desig-details h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(31, 118, 129);
+    margin-bottom: -10px;
+}
+
+.desig-details h2{
+    font-size: 24px;
+    margin-bottom: -15px;
+    color: rgb(1, 66, 75);
+}
+
+.timeline-box:nth-child(2n+1) .desig-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.timeline-box:nth-child(2n) .desig-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.exp-details{
+    position: relative;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+
+
 /* Portfolio Section */
 
 .portfolio-container{
@@ -363,4 +433,3 @@ textarea::placeholder, input::placeholder{
     border: 2px solid white;
     padding: 10px;
 }
-
