@@ -225,6 +225,8 @@ section:nth-child(2n){
     position: relative;
     width: 75%;
     border: 2px solid black;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .timeline-box{
@@ -240,7 +242,7 @@ section:nth-child(2n){
 }
 
 .timeline-box:nth-child(2n){
-    left: 53%;
+    left: 54%;
     
 }
 
@@ -287,7 +289,70 @@ section:nth-child(2n){
     margin-top: -20px;
 }
 
+.timeline-divider{
+    position: absolute; /*to place it in empty space of container*/
+    border: 0.1rem dashed lightgray;
+    width: 0;
+    height: 75%;
+    top: 10%;
+    left: 50%;
+}
 
+.timeline-traveller{
+    position: sticky;
+    top: 25%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.timeline-traveller i{
+    color: rgb(1, 66, 75);
+}
+
+.timeline-box:nth-child(2n+1):after{ /*means after content of timeline box*/
+    content: '';
+    position: absolute;
+    top: 36%;
+    right: -12.7%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(179, 191, 194);
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n):after{ /*means after content of timeline box*/
+    content: '';
+    position: absolute;
+    top: 36%;
+    left: -11.8%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(179, 191, 194);
+    z-index: 1;
+}
+
+/* Education Section */
+
+.education{
+    position: relative;
+    border: 2px solid black;
+    width: 75%;
+}
+
+.education-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    min-height: 150px;
+    border: 2px solid black; 
+    left: 5%;  
+}
+
+.education-box:nth-child(2n){
+    left: 54%;
+}
 
 /* Portfolio Section */
 
