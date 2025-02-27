@@ -224,7 +224,7 @@ section:nth-child(2n){
 .timeline{
     position: relative;
     width: 75%;
-    border: 2px solid black;
+    margin-bottom: 30px;
     /* display: flex;
     flex-direction: column; */
 }
@@ -337,8 +337,8 @@ section:nth-child(2n){
 
 .education{
     position: relative;
-    border: 2px solid black;
     width: 75%;
+    margin-bottom: 30px;
 }
 
 .education-box{
@@ -346,7 +346,6 @@ section:nth-child(2n){
     margin: 5px;
     width: 40%;
     min-height: 150px;
-    border: 2px solid black; 
     left: 5%;  
 }
 
@@ -354,6 +353,92 @@ section:nth-child(2n){
     left: 54%;
 }
 
+.level{
+    /* border: 2px solid black; */
+    margin: 5px;
+}
+
+.level-details p{
+    font-size: 16px;
+    color: rgb(68, 68, 68);
+}
+
+.level-details h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(31, 118, 129);
+    margin-bottom: -10px;
+}
+
+.level-details h2{
+    font-size: 24px;
+    margin-bottom: -15px;
+    color: rgb(1, 66, 75);
+}
+
+.education-box:nth-child(2n+1) .level-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.education-box:nth-child(2n) .level-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.edu-details{
+    position: relative;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+    margin-top: -20px;
+}
+
+.edu-timeline-divider{
+    position: absolute; /*to place it in empty space of container*/
+    border: 0.1rem dashed lightgray;
+    width: 0;
+    height: 75%;
+    top: 10%;
+    left: 50%;
+}
+
+.edu-timeline-traveller{
+    position: sticky;
+    top: 25%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+.edu-timeline-traveller i{
+    color: rgb(1, 66, 75);
+}
+
+.education-box:nth-child(2n+1):after{ /*means after content of timeline box*/
+    content: '';
+    position: absolute;
+    top: 36%;
+    right: -12.7%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(179, 191, 194);
+    z-index: 1;
+}
+
+.education-box:nth-child(2n):after{ /*means after content of timeline box*/
+    content: '';
+    position: absolute;
+    top: 36%;
+    left: -11.8%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(179, 191, 194);
+    z-index: 1;
+}
 /* Portfolio Section */
 
 .portfolio-container{
@@ -361,6 +446,7 @@ section:nth-child(2n){
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .portfolio-image-container{
